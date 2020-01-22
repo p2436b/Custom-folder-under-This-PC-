@@ -48,11 +48,11 @@
             // 
             this.groupBox1.Controls.Add(this.rbLocalMachine);
             this.groupBox1.Controls.Add(this.rbCurrentUser);
-            this.groupBox1.Location = new System.Drawing.Point(17, 14);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Location = new System.Drawing.Point(23, 17);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(346, 75);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Size = new System.Drawing.Size(461, 92);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Install for";
@@ -60,80 +60,79 @@
             // rbLocalMachine
             // 
             this.rbLocalMachine.AutoSize = true;
-            this.rbLocalMachine.Checked = true;
-            this.rbLocalMachine.Location = new System.Drawing.Point(240, 40);
-            this.rbLocalMachine.Margin = new System.Windows.Forms.Padding(2);
+            this.rbLocalMachine.Enabled = false;
+            this.rbLocalMachine.Location = new System.Drawing.Point(320, 49);
+            this.rbLocalMachine.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rbLocalMachine.Name = "rbLocalMachine";
-            this.rbLocalMachine.Size = new System.Drawing.Size(95, 17);
+            this.rbLocalMachine.Size = new System.Drawing.Size(120, 21);
             this.rbLocalMachine.TabIndex = 1;
-            this.rbLocalMachine.TabStop = true;
             this.rbLocalMachine.Text = "Local Machine";
             this.rbLocalMachine.UseVisualStyleBackColor = true;
             // 
             // rbCurrentUser
             // 
             this.rbCurrentUser.AutoSize = true;
-            this.rbCurrentUser.Location = new System.Drawing.Point(98, 40);
-            this.rbCurrentUser.Margin = new System.Windows.Forms.Padding(2);
+            this.rbCurrentUser.Checked = true;
+            this.rbCurrentUser.Location = new System.Drawing.Point(131, 49);
+            this.rbCurrentUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rbCurrentUser.Name = "rbCurrentUser";
-            this.rbCurrentUser.Size = new System.Drawing.Size(84, 17);
+            this.rbCurrentUser.Size = new System.Drawing.Size(110, 21);
             this.rbCurrentUser.TabIndex = 0;
+            this.rbCurrentUser.TabStop = true;
             this.rbCurrentUser.Text = "Current User";
             this.rbCurrentUser.UseVisualStyleBackColor = true;
             // 
             // txtFolderName
             // 
-            this.txtFolderName.Location = new System.Drawing.Point(107, 112);
-            this.txtFolderName.Margin = new System.Windows.Forms.Padding(2);
+            this.txtFolderName.Location = new System.Drawing.Point(143, 138);
+            this.txtFolderName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtFolderName.Name = "txtFolderName";
-            this.txtFolderName.Size = new System.Drawing.Size(258, 20);
+            this.txtFolderName.Size = new System.Drawing.Size(343, 22);
             this.txtFolderName.TabIndex = 1;
             this.txtFolderName.Text = "MyFolder";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(32, 114);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(43, 140);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 13);
+            this.label1.Size = new System.Drawing.Size(93, 17);
             this.label1.TabIndex = 2;
             this.label1.Text = "Folder Name:";
             // 
             // txtFolderIconPath
             // 
-            this.txtFolderIconPath.Location = new System.Drawing.Point(107, 182);
-            this.txtFolderIconPath.Margin = new System.Windows.Forms.Padding(2);
+            this.txtFolderIconPath.Location = new System.Drawing.Point(143, 224);
+            this.txtFolderIconPath.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtFolderIconPath.Name = "txtFolderIconPath";
-            this.txtFolderIconPath.Size = new System.Drawing.Size(257, 20);
+            this.txtFolderIconPath.Size = new System.Drawing.Size(341, 22);
             this.txtFolderIconPath.TabIndex = 3;
+            this.txtFolderIconPath.Text = "D:\\Projects\\migRavenShell\\migRavenShell\\bin\\Release\\migRavenShell.exe,0";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(16, 184);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(21, 226);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(88, 13);
+            this.label2.Size = new System.Drawing.Size(115, 17);
             this.label2.TabIndex = 4;
             this.label2.Text = "Folder Icon Path:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(32, 219);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(43, 270);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 13);
+            this.label3.Size = new System.Drawing.Size(94, 17);
             this.label3.TabIndex = 5;
             this.label3.Text = "Folder tooltip:";
             // 
             // txtFolderTooltip
             // 
-            this.txtFolderTooltip.Location = new System.Drawing.Point(107, 217);
-            this.txtFolderTooltip.Margin = new System.Windows.Forms.Padding(2);
+            this.txtFolderTooltip.Location = new System.Drawing.Point(143, 267);
+            this.txtFolderTooltip.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtFolderTooltip.Name = "txtFolderTooltip";
-            this.txtFolderTooltip.Size = new System.Drawing.Size(257, 20);
+            this.txtFolderTooltip.Size = new System.Drawing.Size(341, 22);
             this.txtFolderTooltip.TabIndex = 6;
             this.txtFolderTooltip.Text = "My folder tooltip.";
             // 
@@ -141,10 +140,10 @@
             // 
             this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdd.Location = new System.Drawing.Point(126, 278);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAdd.Location = new System.Drawing.Point(168, 342);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(114, 29);
+            this.btnAdd.Size = new System.Drawing.Size(152, 36);
             this.btnAdd.TabIndex = 7;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = false;
@@ -154,10 +153,10 @@
             // 
             this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDelete.Location = new System.Drawing.Point(249, 278);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDelete.Location = new System.Drawing.Point(332, 342);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(114, 29);
+            this.btnDelete.Size = new System.Drawing.Size(152, 36);
             this.btnDelete.TabIndex = 8;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
@@ -165,28 +164,27 @@
             // 
             // txtFolderPath
             // 
-            this.txtFolderPath.Location = new System.Drawing.Point(107, 147);
-            this.txtFolderPath.Margin = new System.Windows.Forms.Padding(2);
+            this.txtFolderPath.Location = new System.Drawing.Point(143, 181);
+            this.txtFolderPath.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtFolderPath.Name = "txtFolderPath";
-            this.txtFolderPath.Size = new System.Drawing.Size(258, 20);
+            this.txtFolderPath.Size = new System.Drawing.Size(343, 22);
             this.txtFolderPath.TabIndex = 11;
-            this.txtFolderPath.Text = "c:\\";
+            this.txtFolderPath.Text = "d:\\";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(39, 149);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(52, 183);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(64, 13);
+            this.label6.Size = new System.Drawing.Size(85, 17);
             this.label6.TabIndex = 10;
             this.label6.Text = "Folder Path:";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(382, 323);
+            this.ClientSize = new System.Drawing.Size(509, 398);
             this.Controls.Add(this.txtFolderPath);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnDelete);
@@ -198,8 +196,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtFolderName);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Custom Folders under \"This PC\"";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
