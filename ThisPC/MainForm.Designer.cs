@@ -113,7 +113,6 @@
             this.txtFolderIconPath.Name = "txtFolderIconPath";
             this.txtFolderIconPath.Size = new System.Drawing.Size(341, 22);
             this.txtFolderIconPath.TabIndex = 3;
-            this.txtFolderIconPath.Text = "D:\\Projects\\migRavenShell\\migRavenShell\\bin\\Release\\migRavenShell.exe,0";
             // 
             // label2
             // 
