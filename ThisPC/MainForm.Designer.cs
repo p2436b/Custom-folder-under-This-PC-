@@ -1,6 +1,6 @@
 ﻿namespace ThisPC
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -41,7 +41,13 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.txtFolderPath = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -153,7 +159,7 @@
             // 
             this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDelete.Location = new System.Drawing.Point(332, 342);
+            this.btnDelete.Location = new System.Drawing.Point(331, 342);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(152, 36);
@@ -174,17 +180,59 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(52, 183);
+            this.label6.Location = new System.Drawing.Point(53, 183);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(85, 17);
             this.label6.TabIndex = 10;
             this.label6.Text = "Folder Path:";
             // 
-            // Form1
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Location = new System.Drawing.Point(23, 412);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(461, 148);
+            this.panel1.TabIndex = 12;
+            // 
+            // label5
+            // 
+            this.label5.Location = new System.Drawing.Point(54, 56);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(386, 74);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "* In new GUID message box press \"Ctrl+C\" to copy the GUID then you can use it in " +
+    "removing the folder.\r\n* Give a Star in github if you like it ;)";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.label4.Location = new System.Drawing.Point(53, 21);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(40, 20);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Info";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ThisPC.Properties.Resources.icons8_info_24;
+            this.pictureBox1.Location = new System.Drawing.Point(23, 19);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(509, 398);
+            this.ClientSize = new System.Drawing.Size(509, 572);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtFolderPath);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnDelete);
@@ -196,12 +244,17 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtFolderName);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "Form1";
+            this.MaximizeBox = false;
+            this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Custom Folders under \"This PC\"";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -222,6 +275,10 @@
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.TextBox txtFolderPath;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

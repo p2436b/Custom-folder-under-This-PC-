@@ -4,9 +4,9 @@ using System.Windows.Forms;
 
 namespace ThisPC
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
         }
@@ -28,6 +28,19 @@ namespace ThisPC
             {
                 MessageBox.Show("Error");
             }
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            var inputBox = new InputBox();
+            if (inputBox.ShowDialog() == DialogResult.OK)
+                if (Guid.TryParse(inputBox.txtGuid.Text, out var guid))
+                {
+                    RemoveFolderFromThisPC(guid.ToString("B").ToUpper());
+                    MessageBox.Show("Deleted successfuly", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                    MessageBox.Show("Invalid GUID", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         /// <summary>
@@ -127,6 +140,11 @@ namespace ThisPC
             }
         }
 
+        /// <summary>
+        /// Remove folde from the Windows explorer
+        /// </summary>
+        /// <param name="guid">The folder GUID in registery key</param>
+        /// <returns>True if succeed, False if failure</returns>
         public bool RemoveFolderFromThisPC(string guid)
         {
             try
@@ -147,14 +165,5 @@ namespace ThisPC
             }
         }
 
-        private void btnDelete_Click(object sender, EventArgs e)
-        {
-            var inputBox = new InputBox();
-            if (inputBox.ShowDialog() == DialogResult.OK)
-                if (Guid.TryParse(inputBox.txtGuid.Text, out var guid))
-                    RemoveFolderFromThisPC(guid.ToString("B").ToUpper());
-                else
-                    MessageBox.Show("Invalid GUID", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-        }
     }
 }
