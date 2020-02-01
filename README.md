@@ -1,4 +1,4 @@
 # Custom folder under This PC
-Add Custom Folders under "This PC" in File Explorer Navigation Pane.
+Add Custom Folder under "This PC" in File Explorer Navigation Pane.
 
 You can add custom folders to the the Explorer navigation pane, in pretty much all versions of Windows.
